@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repeated</title>
+</head>
+<body>
+    <h3>5. Write a program to check Repeated characters in string or Not</h3>
+    <p>a. Test</p>
+    <p>b. Welcome</p>
+    <p>c. More</p>
+    <p>d. knowledge</p>
+    <p>e. checking</p>
+    <script>
+    var example = 'test';
+    var example1 = 'welcome';
+    var example2 = 'more';
+    var example3 = 'knowledge';
+    var example4 = 'checking';
+
+    var charRepeats = function(str) {
+
+        for (var i=0; i<str.length; i++) {
+        if ( str.indexOf(str[i]) !== str.lastIndexOf(str[i]) ) {
+           console.log(`example.${str[i]}`);
+
+           return true; 
+
+        }
+        }
+    return false;
+    }
+
+    console.log( charRepeats(example) );
+    console.log( charRepeats(example1) );
+    console.log( charRepeats(example2) );
+    console.log( charRepeats(example3) );
+    console.log( charRepeats(example4) );
+
+    </script>
+</body>
+</html>
